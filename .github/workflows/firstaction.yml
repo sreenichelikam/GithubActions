@@ -33,7 +33,7 @@ jobs:
       - name: Run a one-line script
         run: |
           echo Hello $name!
-          echo github.event_name
+          echo ${{ github.event_name }}
 
   pull_request_only:
     # The type of runner that the job will run on
